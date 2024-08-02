@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "deploy": "npm install && npm run build && npm run start -p 8080",
+    "dev": "next dev -p 80",
     "build": "next build",
-    "start": "next start",
+    "start": "npm install && npm run build && next start -p 80",
     "lint": "next lint"
   },
   "dependencies": {
